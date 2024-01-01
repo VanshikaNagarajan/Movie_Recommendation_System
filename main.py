@@ -43,7 +43,7 @@ def get_recommendations(title, cosine_sim = cosine_sim_overview, movies = movie_
 
 print('getting recommended movies')
 
-movie_title = 'Rebel Moon - Part One: A Child of Fire'
+movie_title = input('Enter a movie title: ')
 recommended_movies = get_recommendations(movie_title)
 print("Recommended Movies for '{}':".format(movie_title))
 print(recommended_movies)
