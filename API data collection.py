@@ -13,7 +13,7 @@ url = "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_v
 
 headers = {
      "accept": "application/json",
-     "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxZjQwMDYxYjJlOGFmY2YyMTUyZGQ0NWU5NWJlOTQyOCIsInN1YiI6IjY1OGU3NWEwNjRmNzE2MjIyNDNmN2QxNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.RMgEWpaRJzN8DcNLWYr3x-F7ZgaQ1pBSo79TUMv8S3c"
+     "Authorization": "YOUR BEARER TOKEN"
 }
 
 response = requests.get(url, headers=headers)
@@ -42,7 +42,7 @@ url = "https://api.themoviedb.org/3/genre/movie/list?language=en"
 
 headers = {
     "accept": "application/json",
-    "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxZjQwMDYxYjJlOGFmY2YyMTUyZGQ0NWU5NWJlOTQyOCIsInN1YiI6IjY1OGU3NWEwNjRmNzE2MjIyNDNmN2QxNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.RMgEWpaRJzN8DcNLWYr3x-F7ZgaQ1pBSo79TUMv8S3c"
+    "Authorization": "YOUR BEARER TOKEN"
 }
 
 response = requests.get(url, headers=headers)
@@ -151,7 +151,7 @@ print(recommended_movies)
 
 # fetching weather api
 response2 = requests.request("GET",
-                            "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/india?unitGroup=us&key=PB8ALQT9SSB4S24S6USTQ2HAW&contentType=json")
+                            "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/india?unitGroup=us&key=YOU API KEY&contentType=json")
 if response2.status_code != 200:
     print('Unexpected Status code: ', response2.status_code)
     sys.exit()
