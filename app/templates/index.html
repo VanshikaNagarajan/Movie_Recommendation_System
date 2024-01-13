@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Front Page</title>
+</head>
+<body>
+    <h1>Welcome to My Movie Recommendation Website</h1>
+    <div>
+        <h2>Featured Movies</h2>
+        <ul>
+            {% for movie in movies %}
+                <li>
+                    <h3>{{ movie.title }}</h3>
+                    <p>{{ movie.overview }}</p>
+                    <h3>{{ movie.original_title }}</h3>
+                    <p>{{ movie.genre_ids }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
