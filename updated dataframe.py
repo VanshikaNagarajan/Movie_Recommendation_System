@@ -25,9 +25,14 @@ for row in rows:
 # Create a DataFrame from the data
 updated_movie_df = pd.DataFrame(data)
 
+
+
+
 # Display the DataFrame information
 print(updated_movie_df.info())
 print(updated_movie_df.head())
 
+
 # Close the database connection
 conn.close()
+updated_movie_df.to_pickle('movies_dataframe.pkl')
